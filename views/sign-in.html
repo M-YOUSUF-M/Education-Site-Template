@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <!-- <script defer src="/js/form.js"></script> -->
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" id="login-form" method="post" action="/sign-in">
+                <input type="text" name="username" placeholder="username" required />
+                <input type="password" name="password" placeholder="password" required />
+                <button>login</button>
+                <p class="message">Not registered? <a href="/sign-up" id="sign-up">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="home-btn"> -->
+    <a href="/" class="home home-btn">Return to Home</a>
+    <!-- </div> -->
+</body>
+
+</html>

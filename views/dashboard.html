@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/dashboard-style.css">
+    <link rel="stylesheet" href="/css/dashboard-utility.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="d-flex" id="wrapper">
+        <div class="bg-dark border-right toggled" id="sidebar-wrapper">
+            <div class="d-flex text-white text-center py-4 primary-text fs-4 fw-bold justify-between">
+                <span class="fas fa-user-graduate m-3">Student Portal</span> 
+                <img src="/img/x.svg" alt="x" class="m-3" id="cross"/>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/dashboard" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="/courses" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-book-reader me-2"></i>Courses</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-calendar-alt me-2"></i>Calendar</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-envelope me-2"></i>Messages</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-user-cog me-2"></i>Settings</a>
+                <a href="/" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-user-cog me-2"></i>Home</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="menu-toggle">Menu</button>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <h2 class="mt-4">Dashboard</h2>
+
+                <div class="row my-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-primary text-white mb-4">
+                            <div class="card-body">Courses Enrolled</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <h3>12</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-success text-white mb-4">
+                            <div class="card-body">Assignments Pending</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <h3>3</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-warning text-white mb-4">
+                            <div class="card-body">Exams Upcoming</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <h3>2</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card bg-danger text-white mb-4">
+                            <div class="card-body">Messages</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <h3>5</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity and Upcoming Events -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">Recent Activity</div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Completed: Math Assignment</li>
+                                    <li class="list-group-item">Submitted: Science Quiz</li>
+                                    <li class="list-group-item">Viewed: Lecture on Physics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">Upcoming Events</div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Exam: Chemistry - 20th Sep</li>
+                                    <li class="list-group-item">Lab Submission: Physics - 22nd Sep</li>
+                                    <li class="list-group-item">Project Deadline: Web Dev - 25th Sep</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
