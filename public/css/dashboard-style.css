@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+}
+#cross{
+    display: none;
+}
+
+#page-content-wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+
+.list-group-item-action {
+    transition: 0.3s ease;
+}
+
+.list-group-item-action:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.card-body {
+    font-size: 18px;
+}
+
+.card-footer {
+    font-size: 24px;
+}
+
+#menu-toggle {
+    margin-right: 10px;
+    display: none;
+}
+
+
+@media (max-width: 765px) {
+    #sidebar-wrapper {
+        position: absolute;
+        top: 0;
+        /* Sidebar is initially hidden off-screen */
+        width: 250px;
+        height: 100%;
+        z-index: 10;
+        background-color: #343a40;
+        transition: left 0.3s ease;
+        /* Smooth transition for sliding in/out */
+    }
+    #cross{
+        display: block;
+    }
+    .sidebar-wrapper{
+        left: 0;
+    }
+
+    /* When toggled, the sidebar will slide in */
+    .toggled {
+        left: -200vw;
+        /* Sidebar is visible on screen */
+    }
+
+    /* Ensure that the content takes full width when sidebar is hidden */
+    #page-content-wrapper {
+        width: 100%;
+        padding-left: 15px;
+        
+    }
+
+    #menu-toggle {
+        display: block;
+
+    }
+}
