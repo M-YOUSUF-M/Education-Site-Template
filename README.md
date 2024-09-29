@@ -5,3 +5,4 @@
 4. Run ``` nodemon index```
 in terminal you will find a link as: http://localhost:8080
 5. click or copy-paste that to your browser
+### if you failed then search internet how to run a nodejs project. here the main file is:  ```index.js```
