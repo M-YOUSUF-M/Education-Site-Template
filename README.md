@@ -1,5 +1,5 @@
 # Running Process....
-1. Node.js from https://nodejs.org/en/download/prebuilt-installer
+1. Download and install Node.js from https://nodejs.org/en/download/prebuilt-installer
 2. Go to root folder
 3. Run ```node init -y```
 4. Run ``` nodemon index```
