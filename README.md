@@ -4,7 +4,7 @@
 3. Run ```node init -y```
 4. Run ``` nodemon index```
 in terminal you will find a link as: http://localhost:8080
-6. click or copy-paste that to your browser
+6. click or copy-paste that link to your browser
    
 *** Login , Registration need 'mongodb' install in your computer from https://www.mongodb.com/try/download/community ***
 
